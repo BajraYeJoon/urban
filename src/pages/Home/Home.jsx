@@ -1,5 +1,12 @@
 import React from "react";
-import { Navbar, Sale, Slider } from "../../components";
+import {
+  Navbar,
+  Sale,
+  Slider,
+  Categories,
+  Products,
+  Newsletter,
+} from "../../components";
 
 const Home = () => {
   return (
@@ -7,6 +14,9 @@ const Home = () => {
       <Sale />
       <Navbar />
       <Slider />
+      <Categories />
+      <Products />
+      <Newsletter />
     </div>
   );
 };

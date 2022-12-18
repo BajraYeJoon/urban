@@ -5,12 +5,12 @@ import styled from "styled-components";
 import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
-import { sliderItems } from "../../constants";
+import { data } from "../../constants";
 
 //main container
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
 `;
@@ -113,7 +113,7 @@ const Slider = () => {
         <ArrowCircleLeftOutlinedIcon />
       </Arrow>
       <SlideContainer slider={slider}>
-        {sliderItems.map((item) => (
+        {data.sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
             <ImgWrapper>
               <Image src={item.img} />

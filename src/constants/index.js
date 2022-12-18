@@ -1,3 +1,4 @@
-import sliderItems from "./data";
+import data from "./data";
+import images from "./images";
 
-export { sliderItems };
+export { data, images };
