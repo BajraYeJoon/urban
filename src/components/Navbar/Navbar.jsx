@@ -2,11 +2,12 @@ import styled from "styled-components";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Badge } from "@mui/material";
-import { fontSize } from "@mui/system";
+import { responsive } from "../../constants";
 
 //MAIN CONTAINER
 const Container = styled.div`
   height: 50px;
+  ${responsive.mobile({ height: "50px" })}
 `;
 
 const SearchContainer = styled.div`
@@ -18,6 +19,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  ${responsive.mobile({ width: "50px" })}
 `;
 
 const Wrapper = styled.div`
@@ -25,6 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${responsive.mobile({ padding: "10px 0" })}
 `;
 
 const Left = styled.div`
@@ -38,12 +41,14 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${responsive.mobile({ flex: "2", justifyContent: "center" })}
 `;
 
 const SubNav = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 1.75rem;
+  ${responsive.mobile({ fontSize: "12px", marginLeft: " 5px;" })}
 `;
 
 const Center = styled.div`
@@ -53,12 +58,14 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: 600;
+  ${responsive.mobile({ fontSize: "25px" })}
 `;
 
 const GlobalLanguage = styled.span`
   font-size: 14px;
   cursor: pointer;
   margin-right: 1rem;
+  ${responsive.mobile({ display: "none" })}
 `;
 
 const Navbar = () => {
@@ -71,7 +78,7 @@ const Navbar = () => {
         <Left>
           <GlobalLanguage>EN</GlobalLanguage>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Search" />
             <SearchOutlinedIcon style={{ color: "black", fontSize: "16" }} />
           </SearchContainer>
         </Left>

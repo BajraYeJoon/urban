@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
-import { data } from "../../constants";
+import { data, responsive } from "../../constants";
 
 //main container
 const Container = styled.div`
@@ -13,6 +13,7 @@ const Container = styled.div`
   height: 90vh;
   position: relative;
   overflow: hidden;
+  ${responsive.mobile({ height: "60vh" })}
 `;
 
 //carousel container
@@ -59,6 +60,7 @@ const ImgWrapper = styled.div`
   height: 100%;
   width: 100vw;
   flex: 1;
+  ${responsive.mobile({ display: "none" })}
 `;
 
 const Image = styled.img`
@@ -70,10 +72,19 @@ const Image = styled.img`
 const ContentContainer = styled.div`
   margin-right: 50px;
   flex: 1;
+  ${responsive.mobile({
+    display: "flex",
+    flexDirection: "column",
+    fontSize: "15px",
+    padding: "0",
+    justifyContent: "center",
+    alignItems: "center",
+  })}
 `;
 
 const Heading = styled.h1`
   font-size: 70px;
+  ${responsive.mobile({ fontSize: "25px" })}
 `;
 const Desc = styled.p`
   margin: 2rem 0;

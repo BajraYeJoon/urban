@@ -1,13 +1,23 @@
 import React from "react";
 import "./App.css";
-import { Home, ProductList, SingleProduct } from "./pages";
+import {
+  Cart,
+  Home,
+  Login,
+  ProductList,
+  Register,
+  SingleProduct,
+} from "./pages";
 
 function App() {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       {/* <ProductList /> */}
-      <SingleProduct />
+      {/* <SingleProduct /> */}
+      {/* <Register /> */}
+      {/* <Login /> */}
+      {/* <Cart /> */}
     </div>
   );
 }

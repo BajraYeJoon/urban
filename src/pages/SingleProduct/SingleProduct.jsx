@@ -60,10 +60,41 @@ const FilterSizeSelect = styled.select`
 `;
 const FilterSizeOption = styled.option``;
 
-const AddContainer = styled.div``;
-const AmountWrapper = styled.div``;
-const Amount = styled.span``;
-const Button = styled.button``;
+const AddContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 2rem;
+`;
+const AmountWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+`;
+const Amount = styled.span`
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+`;
+
+const Button = styled.button`
+  padding: 5px 1rem;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-out;
+  }
+`;
 
 const SingleProduct = () => {
   return (
