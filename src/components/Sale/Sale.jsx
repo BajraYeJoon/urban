@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 30px;
-  background-color: #527474;
+  padding: 2px 0;
+  background-color: #1c226b;
   color: white;
   display: flex;
   justify-content: center;
@@ -14,7 +15,10 @@ const Container = styled.div`
 const Sale = () => {
   return (
     <div>
-      <Container>Sale sale sale</Container>
+      <Container>
+        Flash sale - everything on our site is 25% off. Hurry - this sale won't
+        last long! Shop now and save big
+      </Container>
     </div>
   );
 };

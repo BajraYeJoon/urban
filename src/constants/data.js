@@ -11,16 +11,16 @@ const sliderItems = [
   {
     id: 2,
     img: images.image02,
-    title: "AUTUMN COLLECTION",
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    title: "MENS COLLECTION",
+    desc: "For a limited time, get 20% off our entire men's collection, including shirts, jeans, shoes, and more. Plus, get free shipping on orders over $50. Don't miss out on these amazing discounts - shop now and save!.",
     bg: "fcf1ed",
   },
   {
     id: 3,
     img: images.image03,
-    title: "LOUNGEWEAR LOVE",
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "fbf0f4",
+    title: "LOUNGEWEAR RETRO",
+    desc: "For a limited time, get 20% off our entire men's collection, including shirts, jeans, shoes, and more. Plus, get free shipping on orders over $50. Don't miss out on these amazing discounts - shop now and save!",
+    bg: "D1FFFA",
   },
 ];
 
@@ -45,14 +45,14 @@ const categories = [
   },
   {
     id: 4,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "LIGHT JACKETS",
+    img: "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=300",
+    title: "URBAN STYLE",
     category: "jeans",
   },
   {
     id: 5,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "LIGHT JACKETS",
+    img: "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=300",
+    title: "ROYAL STYLE",
     category: "sweater",
   },
 ];
@@ -64,7 +64,7 @@ const popularProducts = [
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+    img: "https://www.pngall.com/wp-content/uploads/4/Black-Leather-Jacket-PNG-Image.png",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ const popularProducts = [
   },
   {
     id: 4,
-    img: "https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+    img: "https://www.pngall.com/wp-content/uploads/13/Nike-Shoes-PNG-300x225.png",
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ const popularProducts = [
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: "https://www.pngplay.com/wp-content/uploads/6/Girl-Fashion-Accessories-PNG-Clipart-Background.png",
   },
   {
     id: 8,

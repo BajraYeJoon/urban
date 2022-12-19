@@ -5,6 +5,7 @@ const Container = styled.div`
   height: 60vh;
   width: 60%;
   display: flex;
+
   justify-content: center;
   align-items: center;
   position: relative;

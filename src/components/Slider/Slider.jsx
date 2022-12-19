@@ -60,6 +60,7 @@ const ImgWrapper = styled.div`
   height: 100%;
   width: 100vw;
   flex: 1;
+  object-fit: cover;
   ${responsive.mobile({ display: "none" })}
 `;
 

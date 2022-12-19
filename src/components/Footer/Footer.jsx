@@ -2,7 +2,6 @@ import styled from "styled-components";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { Title } from "@mui/icons-material";
 
 import HomeIcon from "@mui/icons-material/Home";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
@@ -11,6 +10,8 @@ import EmailIcon from "@mui/icons-material/Email";
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  background-color: #1c226b;
+  color: white;
 `;
 
 const Left = styled.div`
@@ -63,6 +64,7 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
+  margin-top: 15px;
   flex: 1;
 `;
 
@@ -80,17 +82,16 @@ const Footer = () => {
       <Left>
         <Logo>Urban</Logo>
         <Desc>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          consequuntur nemo perferendis vitae dolore saepe.
+          Where urban style meets convenience. Stay fresh, stay urban.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="red">
+          <SocialIcon color="black">
             <FacebookOutlinedIcon />
           </SocialIcon>
-          <SocialIcon color="gray">
+          <SocialIcon color="black">
             <InstagramIcon />
           </SocialIcon>
-          <SocialIcon color="green">
+          <SocialIcon color="black">
             <TwitterIcon />
           </SocialIcon>
         </SocialContainer>
@@ -109,15 +110,15 @@ const Footer = () => {
         <Heading>Contact</Heading>
         <SubContact>
           <HomeIcon style={{ marginRight: "10px" }} />
-          address
+          Bhaktapur, Nepal, 44800
         </SubContact>
         <SubContact>
           <SmartphoneIcon style={{ marginRight: "10px" }} />
-          phone number
+          +977-9860756619
         </SubContact>
         <SubContact>
           <EmailIcon style={{ marginRight: "10px" }} />
-          Email
+          binaya.bajrashakya@gmail.com
         </SubContact>
         <Payment src="" />
       </Right>

@@ -5,6 +5,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 `;
 
 const Container = styled.div`
@@ -35,6 +36,8 @@ const Info = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 2;
+  z-index: 5;
 `;
 const Title = styled.h2`
   color: white;

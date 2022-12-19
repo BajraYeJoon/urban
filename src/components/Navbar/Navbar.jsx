@@ -5,8 +5,6 @@ import { Badge } from "@mui/material";
 import { responsive } from "../../constants";
 import { useSelector } from "react-redux";
 
-import { Link } from "react-router-dom";
-
 //MAIN CONTAINER
 const Container = styled.div`
   height: 50px;
@@ -71,6 +69,11 @@ const GlobalLanguage = styled.span`
   ${responsive.mobile({ display: "none" })}
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: black;
+`;
+
 const Navbar = () => {
   const cart = useSelector((state) => state.cart.quantity);
 
@@ -89,13 +92,13 @@ const Navbar = () => {
         </Left>
         {/*  */}
         <Center>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link href="/">
             <Logo>Urban</Logo>
           </Link>
         </Center>
         {/*  */}
         <Right>
-          <Link to="/cart">
+          <Link href="/cart">
             <SubNav>
               <Badge color="secondary" badgeContent={cart}>
                 <ShoppingCartRoundedIcon />
@@ -103,11 +106,11 @@ const Navbar = () => {
             </SubNav>
           </Link>
 
-          <Link to="/login" style={{ textDecoration: "none" }}>
+          <Link href="/login">
             <SubNav>Sign In</SubNav>
           </Link>
 
-          <Link to="/register" style={{ textDecoration: "none" }}>
+          <Link href="/register">
             <SubNav>Register</SubNav>
           </Link>
         </Right>

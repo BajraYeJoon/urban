@@ -4,7 +4,8 @@ import CategoryItem from "../CategoryItem/CategoryItem";
 
 const Container = styled.div`
   display: flex;
-  padding: 20px;
+  margin-top: 1.5rem;
+  padding: 40px;
   justify-content: space-between;
   flex-wrap: wrap;
 `;

@@ -7,7 +7,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url(https://plus.unsplash.com/premium_photo-1663047660467-351c12a74d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+    url(https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
       center;
 
   display: flex;
@@ -16,8 +16,9 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
+  text-align: center;
 `;
 
 const RegWrapper = styled.div`
@@ -34,7 +35,7 @@ const Input = styled.input`
   min-width: 30%;
   flex: 1;
   padding: 5px 5px;
-  margin: 1rem 1rem;
+  margin: 10px;
 `;
 
 const Link = styled.a`
@@ -45,8 +46,8 @@ const Link = styled.a`
 `;
 
 const Button = styled.button`
-  padding: 0.75rem 2rem;
-  font-size: 20px;
+  padding: 11px;
+  font-size: 15px;
   background-color: transparent;
   cursor: pointer;
 
