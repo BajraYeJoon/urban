@@ -3,6 +3,9 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Badge } from "@mui/material";
 import { responsive } from "../../constants";
+import { useSelector } from "react-redux";
+
+import { Link } from "react-router-dom";
 
 //MAIN CONTAINER
 const Container = styled.div`
@@ -69,6 +72,8 @@ const GlobalLanguage = styled.span`
 `;
 
 const Navbar = () => {
+  const cart = useSelector((state) => state.cart.quantity);
+
   return (
     // Main container
     <Container>
@@ -84,17 +89,27 @@ const Navbar = () => {
         </Left>
         {/*  */}
         <Center>
-          <Logo>Urban</Logo>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Logo>Urban</Logo>
+          </Link>
         </Center>
         {/*  */}
         <Right>
-          <SubNav>
-            <Badge color="secondary" badgeContent={4}>
-              <ShoppingCartRoundedIcon />
-            </Badge>
-          </SubNav>
-          <SubNav>Sign In</SubNav>
-          <SubNav>Register</SubNav>
+          <Link to="/cart">
+            <SubNav>
+              <Badge color="secondary" badgeContent={cart}>
+                <ShoppingCartRoundedIcon />
+              </Badge>
+            </SubNav>
+          </Link>
+
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <SubNav>Sign In</SubNav>
+          </Link>
+
+          <Link to="/register" style={{ textDecoration: "none" }}>
+            <SubNav>Register</SubNav>
+          </Link>
         </Right>
       </Wrapper>
     </Container>

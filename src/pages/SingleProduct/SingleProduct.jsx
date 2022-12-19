@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { Footer, Navbar, Newsletter, Sale } from "../../components";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import { useEffect, useState } from "react";
+import { addProduct } from "../../redux/cartRedux";
+import { useDispatch } from "react-redux";
+import axios from "axios";
 
 const Container = styled.div``;
 const ProductWrapper = styled.div`
@@ -97,6 +101,21 @@ const Button = styled.button`
 `;
 
 const SingleProduct = () => {
+  const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
+
+  const handleQuantity = (type) => {
+    if (type === "dec") {
+      quantity > 1 && setQuantity(quantity - 1);
+    } else {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const handleClick = () => {
+    dispatch(addProduct({ quantity }));
+  };
+
   return (
     <Container>
       <Navbar />
@@ -137,11 +156,11 @@ const SingleProduct = () => {
 
           <AddContainer>
             <AmountWrapper>
-              <RemoveCircleOutlineIcon />
-              <Amount>1</Amount>
-              <AddCircleOutlineIcon />
+              <RemoveCircleOutlineIcon onClick={() => handleQuantity("dec")} />
+              <Amount>{quantity}</Amount>
+              <AddCircleOutlineIcon onClick={() => handleQuantity("inc")} />
             </AmountWrapper>
-            <Button>Add to Cart</Button>
+            <Button onClick={handleClick}>Add to Cart</Button>
           </AddContainer>
         </InfoContainer>
       </ProductWrapper>
