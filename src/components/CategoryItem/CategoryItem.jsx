@@ -47,10 +47,16 @@ const Button = styled.button`
   border: none;
   padding: 0.75rem 2rem;
   font-size: 20px;
-  background-color: white;
-  color: gray;
+  background-color: black;
+  color: white;
   cursor:  pointer;
   font-weight: 300;
+  &:hover {
+    border: 1px solid black;
+    background-color: white;
+    color:black;
+  }
+
 }
 
 .app__navbar-links li:hover {

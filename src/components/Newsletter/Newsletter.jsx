@@ -29,7 +29,7 @@ const Title = styled.h2`
   margin-bottom: 2px;
 `;
 const Desc = styled.p`
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 10px;
 `;
 const InputContainer = styled.input`
@@ -38,7 +38,7 @@ const InputContainer = styled.input`
 `;
 const Button = styled.button`
   margin-top: 10px;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 15px;
   background-color: transparent;
   cursor: pointer;

@@ -25,14 +25,15 @@ const Form = styled.form`
   flex-wrap: wrap;
 `;
 const Title = styled.h1`
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 400;
+  margin-bottom: 15px;
 `;
 const Input = styled.input`
   min-width: 30%;
   flex: 1;
   padding: 10px 5px;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
 `;
 const Agree = styled.span`
   margin-top: 5px;
@@ -41,8 +42,8 @@ const Agree = styled.span`
 `;
 
 const Button = styled.button`
-  padding: 0.75rem 2rem;
-  font-size: 20px;
+  padding: 0.5rem 2rem;
+  font-size: 15px;
   background-color: transparent;
   cursor: pointer;
 
@@ -53,26 +54,36 @@ const Button = styled.button`
   }
 `;
 
+const Link = styled.a`
+  margin-left: 12rem;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
+`;
+
 const Register = () => {
   return (
     <Container>
       <RegWrapper>
-        <Title>Creat and account</Title>
+        <Title>Create an account</Title>
         <Form>
-          <Input placeholder="name" />
-          <Input placeholder="last name" />
-          <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+          <Input placeholder="First Name" />
+          <Input placeholder="Last Name" />
+          <Input placeholder="Username" />
+          <Input placeholder="E-mail" />
+          <Input placeholder="Password" />
+          <Input placeholder="Confirm Password" />
 
           <Agree>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-            atque, porro repellat ducimus velit inventore molestiae sit
-            doloremque id? Fugit.
+            By creating an account, you agree to our terms and conditions and
+            privacy policy. See terms and conditions and privacy policy
+            agreement.
           </Agree>
 
           <Button>Create Now!</Button>
+          <Link href="/login">Already a User ? Login Now</Link>
         </Form>
       </RegWrapper>
     </Container>

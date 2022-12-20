@@ -34,7 +34,7 @@ const TopTexts = styled.div``;
 const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
-  margin: 5px 10px;
+  margin-right: 15px;
 `;
 
 const Info = styled.div`

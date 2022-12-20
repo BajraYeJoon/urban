@@ -10,7 +10,7 @@ import EmailIcon from "@mui/icons-material/Email";
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #1c226b;
+  background-color: #320764;
   color: white;
 `;
 

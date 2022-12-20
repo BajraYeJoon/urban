@@ -16,9 +16,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 20px;
+  font-size: 3rem;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 18px;
 `;
 
 const RegWrapper = styled.div`
@@ -34,7 +35,7 @@ const Form = styled.form`
 const Input = styled.input`
   min-width: 30%;
   flex: 1;
-  padding: 5px 5px;
+  padding: 11px;
   margin: 10px;
 `;
 
@@ -46,7 +47,7 @@ const Link = styled.a`
 `;
 
 const Button = styled.button`
-  padding: 11px;
+  padding: 10px;
   font-size: 15px;
   background-color: transparent;
   cursor: pointer;
@@ -64,13 +65,13 @@ const Register = () => {
       <RegWrapper>
         <Title>Login</Title>
         <Form>
-          <Input placeholder="name" />
-          <Input placeholder="password" />
+          <Input placeholder="Username" />
+          <Input placeholder="Password" />
 
           <Button>Login</Button>
 
           <Link>Forgot?</Link>
-          <Link>Create account</Link>
+          <Link href="/register">Create account</Link>
         </Form>
       </RegWrapper>
     </Container>

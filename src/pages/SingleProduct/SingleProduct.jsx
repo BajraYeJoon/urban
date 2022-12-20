@@ -123,17 +123,16 @@ const SingleProduct = () => {
 
       <ProductWrapper>
         <ImgContainer>
-          <Image src="https://images.unsplash.com/photo-1671418285899-58fb1471c038?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+          <Image src="https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png" />
         </ImgContainer>
 
         <InfoContainer>
-          <Title>iajdif</Title>
+          <Title>Grayish Cap For Men</Title>
           <Desc>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-            repellat tempora, hic commodi eaque impedit beatae nesciunt minima
-            ea praesentium?
+            Cap for Summer | With a cool looking design and fiber material, Be
+            Cool. Check out the sale for more discount.
           </Desc>
-          <Price>140.2</Price>
+          <Price>$12.99</Price>
 
           <FilterContainer>
             <Filter>
